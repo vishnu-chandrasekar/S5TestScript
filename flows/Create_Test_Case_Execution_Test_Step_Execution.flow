@@ -5,7 +5,7 @@
         <name>Insert_Defect_Documents</name>
         <label>Insert Defect Documents</label>
         <locationX>166</locationX>
-        <locationY>930</locationY>
+        <locationY>753</locationY>
         <actionName>AP_InsertDefectDocument</actionName>
         <actionType>apex</actionType>
         <connector>
@@ -29,7 +29,7 @@
         <name>Testing</name>
         <label>Testing</label>
         <locationX>743</locationX>
-        <locationY>933</locationY>
+        <locationY>756</locationY>
         <actionName>AP_CreateTestCaseExecution</actionName>
         <actionType>apex</actionType>
         <connector>
@@ -58,7 +58,7 @@
         <name>Assign_ConDocId_Collection</name>
         <label>Assign ConDocId Collection</label>
         <locationX>1663</locationX>
-        <locationY>370</locationY>
+        <locationY>193</locationY>
         <assignmentItems>
             <assignToReference>var_ConDocIdCollection</assignToReference>
             <operator>Add</operator>
@@ -75,7 +75,7 @@
         <name>Assign_Defect_Record</name>
         <label>Assign Defect Record</label>
         <locationX>1836</locationX>
-        <locationY>690</locationY>
+        <locationY>513</locationY>
         <assignmentItems>
             <assignToReference>Defect_Record.DetectedEnvironment__c</assignToReference>
             <operator>Assign</operator>
@@ -153,13 +153,6 @@
                 <elementReference>Loop_through_Test_Step_Record_Collection.Expected_Result__c</elementReference>
             </value>
         </assignmentItems>
-        <assignmentItems>
-            <assignToReference>Defect_Record.DetectedBy__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>$User.Id</elementReference>
-            </value>
-        </assignmentItems>
         <connector>
             <targetReference>Assign_Defect_Record_to_Collection</targetReference>
         </connector>
@@ -169,7 +162,7 @@
         <name>Assign_Defect_Record_to_Collection</name>
         <label>Assign Defect Record to Collection</label>
         <locationX>1644</locationX>
-        <locationY>777</locationY>
+        <locationY>600</locationY>
         <assignmentItems>
             <assignToReference>Defect_RecordCollection</assignToReference>
             <operator>Add</operator>
@@ -185,7 +178,7 @@
         <name>Assign_empty_collection_to_break_loop</name>
         <label>Assign empty collection to break loop</label>
         <locationX>1401</locationX>
-        <locationY>782</locationY>
+        <locationY>605</locationY>
         <assignmentItems>
             <assignToReference>TestStep_RecordCollection</assignToReference>
             <operator>Assign</operator>
@@ -201,7 +194,7 @@
         <name>Assign_empty_collection_to_break_loop_0</name>
         <label>Assign empty collection to break loop</label>
         <locationX>2054</locationX>
-        <locationY>624</locationY>
+        <locationY>447</locationY>
         <assignmentItems>
             <assignToReference>TestStep_RecordCollection</assignToReference>
             <operator>Assign</operator>
@@ -217,7 +210,7 @@
         <name>Assign_Passed_TSE_to_Record_Collection</name>
         <label>Assign Passed TSE to Record Collection</label>
         <locationX>1907</locationX>
-        <locationY>234</locationY>
+        <locationY>57</locationY>
         <assignmentItems>
             <assignToReference>passed_TSERecCollection</assignToReference>
             <operator>Add</operator>
@@ -233,7 +226,7 @@
         <name>Assign_Test_Case_Execution_Id</name>
         <label>Assign Test Case Execution Id</label>
         <locationX>1127</locationX>
-        <locationY>1035</locationY>
+        <locationY>858</locationY>
         <assignmentItems>
             <assignToReference>Loop_Through_Test_Step_Execution_Collection.Test_Case_Execution__c</assignToReference>
             <operator>Assign</operator>
@@ -249,7 +242,7 @@
         <name>Assign_Test_Case_Execution_to_Blocked</name>
         <label>Assign Test Case Execution to Blocked</label>
         <locationX>1911</locationX>
-        <locationY>510</locationY>
+        <locationY>333</locationY>
         <assignmentItems>
             <assignToReference>TestCaseExecution_Record.Blocked__c</assignToReference>
             <operator>Assign</operator>
@@ -265,8 +258,8 @@
         <description>Assign Test Case to create Test Case Execution</description>
         <name>Assign_Test_Case_to_Test_Case_Execution</name>
         <label>Assign Test Case to Test Case Execution</label>
-        <locationX>1113</locationX>
-        <locationY>364</locationY>
+        <locationX>1108</locationX>
+        <locationY>191</locationY>
         <assignmentItems>
             <assignToReference>TestCaseExecution_Record.Capability__c</assignToReference>
             <operator>Assign</operator>
@@ -353,7 +346,7 @@
         <name>Assign_Test_Step_Execution_Records_to_Collection</name>
         <label>Assign Test Step Execution Records to Collection</label>
         <locationX>2103</locationX>
-        <locationY>369</locationY>
+        <locationY>192</locationY>
         <assignmentItems>
             <assignToReference>TestStepExecution_RecordCollection</assignToReference>
             <operator>Add</operator>
@@ -370,7 +363,7 @@
         <name>Assign_Test_Step_to_Test_Step_Execution_Record</name>
         <label>Assign Test Step to Test Step Execution Record</label>
         <locationX>1762</locationX>
-        <locationY>370</locationY>
+        <locationY>193</locationY>
         <assignmentItems>
             <assignToReference>TestStepExecution_Record.Test_Step__c</assignToReference>
             <operator>Assign</operator>
@@ -421,7 +414,7 @@
         <name>Assign_TSE_recordId</name>
         <label>Assign TSE recordId</label>
         <locationX>1456</locationX>
-        <locationY>374</locationY>
+        <locationY>197</locationY>
         <assignmentItems>
             <assignToReference>tse_recordId</assignToReference>
             <operator>Assign</operator>
@@ -437,7 +430,7 @@
         <name>Find_Count_of_Record_Collection</name>
         <label>Find Count of Record Collection</label>
         <locationX>1335</locationX>
-        <locationY>615</locationY>
+        <locationY>438</locationY>
         <assignmentItems>
             <assignToReference>NumberOfTSE_Passed</assignToReference>
             <operator>AssignCount</operator>
@@ -452,13 +445,6 @@
                 <elementReference>TestStepExecution_RecordCollection</elementReference>
             </value>
         </assignmentItems>
-        <assignmentItems>
-            <assignToReference>TotalNumberOfTS</assignToReference>
-            <operator>AssignCount</operator>
-            <value>
-                <elementReference>TestStep_RecordCollection</elementReference>
-            </value>
-        </assignmentItems>
         <connector>
             <targetReference>Find_Percentage_of_TSE_Passed</targetReference>
         </connector>
@@ -467,7 +453,7 @@
         <name>Find_Percentage_of_TSE_Passed</name>
         <label>Find Percentage of TSE Passed</label>
         <locationX>1220</locationX>
-        <locationY>615</locationY>
+        <locationY>438</locationY>
         <assignmentItems>
             <assignToReference>TestCaseExecution_Record.Test_Step_Executions_Passed__c</assignToReference>
             <operator>Assign</operator>
@@ -475,38 +461,15 @@
                 <elementReference>PercentageOf_TSE_Passed</elementReference>
             </value>
         </assignmentItems>
-        <assignmentItems>
-            <assignToReference>TestCaseExecution_Record.Test_Step_Execution_Completion__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>PercentageofTSE_Completed</elementReference>
-            </value>
-        </assignmentItems>
         <connector>
             <targetReference>Completion_Status_Based_on_TSE_Pass_Percent</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>Populate_Flow_variable</name>
-        <label>Populate Flow variable</label>
-        <locationX>792</locationX>
-        <locationY>359</locationY>
-        <assignmentItems>
-            <assignToReference>$Flow.CurrentRecord</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>recordId</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Get_Test_Case_Record</targetReference>
         </connector>
     </assignments>
     <assignments>
         <name>TSE_with_TCEId</name>
         <label>TSE with TCE Id</label>
         <locationX>1430</locationX>
-        <locationY>986</locationY>
+        <locationY>809</locationY>
         <assignmentItems>
             <assignToReference>TSE_with_TCE_Id</assignToReference>
             <operator>Add</operator>
@@ -519,26 +482,10 @@
         </connector>
     </assignments>
     <assignments>
-        <name>Update_the_Environment_Value</name>
-        <label>Update the Environment Value</label>
-        <locationX>1489</locationX>
-        <locationY>234</locationY>
-        <assignmentItems>
-            <assignToReference>TestCaseExecution_Record.Environment__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>TCE_Environment</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Loop_through_Test_Step_Record_Collection</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
         <name>X0_25X</name>
         <label>0% - 25%</label>
         <locationX>979</locationX>
-        <locationY>513</locationY>
+        <locationY>336</locationY>
         <assignmentItems>
             <assignToReference>TestCaseExecution_Record.Completion_Status__c</assignToReference>
             <operator>Assign</operator>
@@ -554,7 +501,7 @@
         <name>X100X</name>
         <label>100%</label>
         <locationX>1030</locationX>
-        <locationY>776</locationY>
+        <locationY>599</locationY>
         <assignmentItems>
             <assignToReference>TestCaseExecution_Record.Completion_Status__c</assignToReference>
             <operator>Assign</operator>
@@ -570,7 +517,7 @@
         <name>X25_50X</name>
         <label>25% - 50%</label>
         <locationX>877</locationX>
-        <locationY>568</locationY>
+        <locationY>391</locationY>
         <assignmentItems>
             <assignToReference>TestCaseExecution_Record.Completion_Status__c</assignToReference>
             <operator>Assign</operator>
@@ -586,7 +533,7 @@
         <name>X50_75X</name>
         <label>50% - 75%</label>
         <locationX>849</locationX>
-        <locationY>686</locationY>
+        <locationY>509</locationY>
         <assignmentItems>
             <assignToReference>TestCaseExecution_Record.Completion_Status__c</assignToReference>
             <operator>Assign</operator>
@@ -602,7 +549,7 @@
         <name>X75_100X</name>
         <label>75% - 100%</label>
         <locationX>919</locationX>
-        <locationY>783</locationY>
+        <locationY>606</locationY>
         <assignmentItems>
             <assignToReference>TestCaseExecution_Record.Completion_Status__c</assignToReference>
             <operator>Assign</operator>
@@ -618,7 +565,7 @@
         <name>zero</name>
         <label>0%</label>
         <locationX>1089</locationX>
-        <locationY>507</locationY>
+        <locationY>330</locationY>
         <assignmentItems>
             <assignToReference>TestCaseExecution_Record.Completion_Status__c</assignToReference>
             <operator>Assign</operator>
@@ -634,7 +581,7 @@
         <name>Check_for_Defected_Record</name>
         <label>Check for Defected Record</label>
         <locationX>629</locationX>
-        <locationY>934</locationY>
+        <locationY>757</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Record_Not_Found</name>
@@ -671,7 +618,7 @@
         <name>Check_if_conDocID_Collection_is_empty</name>
         <label>Check if conDocID Collection is empty</label>
         <locationX>245</locationX>
-        <locationY>933</locationY>
+        <locationY>756</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Null</name>
@@ -708,8 +655,8 @@
         <description>Check if test step records are returned</description>
         <name>Check_if_records_are_returned</name>
         <label>Check if records are returned</label>
-        <locationX>1180</locationX>
-        <locationY>50</locationY>
+        <locationX>1266</locationX>
+        <locationY>23</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>TS_Records_found</name>
@@ -722,7 +669,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Test_Case_Execution</targetReference>
+                <targetReference>Loop_through_Test_Step_Record_Collection</targetReference>
             </connector>
             <label>Records found</label>
         </rules>
@@ -746,7 +693,7 @@
         <name>Check_if_Test_Step_Execution_is_passed</name>
         <label>Check if Test Step Execution is passed</label>
         <locationX>1898</locationX>
-        <locationY>372</locationY>
+        <locationY>195</locationY>
         <defaultConnector>
             <targetReference>Assign_Test_Step_Execution_Records_to_Collection</targetReference>
         </defaultConnector>
@@ -786,7 +733,7 @@
         <name>Check_which_button_clicked</name>
         <label>Check which button clicked</label>
         <locationX>1540</locationX>
-        <locationY>779</locationY>
+        <locationY>602</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Cancel_Flow</name>
@@ -837,7 +784,7 @@
         <name>Check_which_button_clicked_0</name>
         <label>Check which button clicked</label>
         <locationX>2216</locationX>
-        <locationY>361</locationY>
+        <locationY>184</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Cancel_Flow_With_Defect</name>
@@ -960,7 +907,7 @@
         <name>Completion_Status_Based_on_TSE_Pass_Percent</name>
         <label>Completion Status Based on TSE Pass Percent</label>
         <locationX>1085</locationX>
-        <locationY>633</locationY>
+        <locationY>456</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>X0</name>
@@ -1090,22 +1037,6 @@
         <picklistObject>Project_Defect__c</picklistObject>
     </dynamicChoiceSets>
     <dynamicChoiceSets>
-        <name>Environemnt</name>
-        <dataType>Picklist</dataType>
-        <displayField xsi:nil="true"/>
-        <object xsi:nil="true"/>
-        <picklistField>Environment__c</picklistField>
-        <picklistObject>Test_Case_Execution__c</picklistObject>
-    </dynamicChoiceSets>
-    <dynamicChoiceSets>
-        <name>Environment</name>
-        <dataType>Picklist</dataType>
-        <displayField xsi:nil="true"/>
-        <object xsi:nil="true"/>
-        <picklistField>Environment__c</picklistField>
-        <picklistObject>Test_Case_Execution__c</picklistObject>
-    </dynamicChoiceSets>
-    <dynamicChoiceSets>
         <name>picklist_Status_Tse</name>
         <dataType>Picklist</dataType>
         <displayField xsi:nil="true"/>
@@ -1151,19 +1082,13 @@
         <expression>(({!NumberOfTSE_Passed}/{!TotalNumberOfTSE})*100)</expression>
         <scale>2</scale>
     </formulas>
-    <formulas>
-        <name>PercentageofTSE_Completed</name>
-        <dataType>Number</dataType>
-        <expression>(({!TotalNumberOfTSE})/({!TotalNumberOfTS})*100)</expression>
-        <scale>2</scale>
-    </formulas>
     <interviewLabel>Create Test Case Execution &amp; Test Step Execution {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Create Test Case Execution &amp; Test Step Execution</label>
     <loops>
         <name>Loop_Through_Test_Step_Execution_Collection</name>
         <label>Loop Through Test Step Execution Collection</label>
         <locationX>1132</locationX>
-        <locationY>904</locationY>
+        <locationY>727</locationY>
         <collectionReference>TestStepExecution_RecordCollection</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -1177,7 +1102,7 @@
         <name>Loop_through_Test_Step_Record_Collection</name>
         <label>Loop through Test Step Record Collection</label>
         <locationX>1361</locationX>
-        <locationY>368</locationY>
+        <locationY>191</locationY>
         <collectionReference>TestStep_RecordCollection</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -1210,7 +1135,7 @@
         <name>Create_Defect_Record</name>
         <label>Create Defect Record</label>
         <locationX>442</locationX>
-        <locationY>932</locationY>
+        <locationY>755</locationY>
         <connector>
             <targetReference>Get_Defect_Record</targetReference>
         </connector>
@@ -1220,7 +1145,7 @@
         <name>Create_Test_Case_Execution</name>
         <label>Create Test Case Execution</label>
         <locationX>1240</locationX>
-        <locationY>767</locationY>
+        <locationY>590</locationY>
         <connector>
             <targetReference>Get_Test_Case_Execution_Record</targetReference>
         </connector>
@@ -1230,7 +1155,7 @@
         <name>Create_TSE_Records</name>
         <label>Create TSE Records</label>
         <locationX>975</locationX>
-        <locationY>924</locationY>
+        <locationY>747</locationY>
         <connector>
             <targetReference>Get_Defected_TSE_Records</targetReference>
         </connector>
@@ -1240,7 +1165,7 @@
         <name>Get_Defect_Record</name>
         <label>Get Defect Record</label>
         <locationX>339</locationX>
-        <locationY>933</locationY>
+        <locationY>756</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Check_if_conDocID_Collection_is_empty</targetReference>
@@ -1264,7 +1189,7 @@
         <name>Get_Defected_TSE_Records</name>
         <label>Get Defected TSE Records</label>
         <locationX>851</locationX>
-        <locationY>926</locationY>
+        <locationY>749</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Testing</targetReference>
@@ -1295,7 +1220,7 @@
         <name>Get_Test_Case_Execution_Record</name>
         <label>Get Test Case Execution Record</label>
         <locationX>1130</locationX>
-        <locationY>767</locationY>
+        <locationY>590</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Loop_Through_Test_Step_Execution_Collection</targetReference>
@@ -1321,7 +1246,7 @@
         <name>Get_Test_Case_Record</name>
         <label>Get Test Case Record</label>
         <locationX>993</locationX>
-        <locationY>368</locationY>
+        <locationY>191</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Assign_Test_Case_to_Test_Case_Execution</targetReference>
@@ -1343,7 +1268,7 @@
         <name>Get_Test_Step_Records</name>
         <label>Get Test Step Records</label>
         <locationX>1213</locationX>
-        <locationY>368</locationY>
+        <locationY>191</locationY>
         <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Check_if_records_are_returned</targetReference>
@@ -1371,7 +1296,7 @@
         <name>New_Defect</name>
         <label>New Defect</label>
         <locationX>2243</locationX>
-        <locationY>696</locationY>
+        <locationY>519</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -1488,7 +1413,6 @@
                     <stringValue>Continue Test Execution</stringValue>
                 </value>
             </inputParameters>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
             <outputParameters>
                 <assignToReference>buttonClick</assignToReference>
@@ -1499,85 +1423,10 @@
         <showHeader>true</showHeader>
     </screens>
     <screens>
-        <name>Test_Case_Execution</name>
-        <label>Test Case Execution</label>
-        <locationX>1343</locationX>
-        <locationY>160</locationY>
-        <allowBack>true</allowBack>
-        <allowFinish>true</allowFinish>
-        <allowPause>true</allowPause>
-        <connector>
-            <targetReference>Update_the_Environment_Value</targetReference>
-        </connector>
-        <fields>
-            <name>TCE_Environment</name>
-            <choiceReferences>Environemnt</choiceReferences>
-            <dataType>String</dataType>
-            <fieldText>Environment</fieldText>
-            <fieldType>DropdownBox</fieldType>
-            <isRequired>true</isRequired>
-        </fields>
-        <fields>
-            <name>Custom_Flow_Footer</name>
-            <extensionName>c:CustomFlowFooter</extensionName>
-            <fieldType>ComponentInstance</fieldType>
-            <inputParameters>
-                <name>buttonClick</name>
-                <value>
-                    <elementReference>customButtonClick</elementReference>
-                </value>
-            </inputParameters>
-            <inputParameters>
-                <name>buttonLocation</name>
-                <value>
-                    <stringValue>middle</stringValue>
-                </value>
-            </inputParameters>
-            <inputParameters>
-                <name>cancelButtonClass</name>
-                <value>
-                    <stringValue>slds-button_outline-brand</stringValue>
-                </value>
-            </inputParameters>
-            <inputParameters>
-                <name>cancelButtonLabel</name>
-                <value>
-                    <stringValue>Save &amp; Cancel Execution</stringValue>
-                </value>
-            </inputParameters>
-            <inputParameters>
-                <name>nextButtonLabel</name>
-                <value>
-                    <stringValue>Continue Test Execution</stringValue>
-                </value>
-            </inputParameters>
-            <inputParameters>
-                <name>showNextButton</name>
-                <value>
-                    <booleanValue>true</booleanValue>
-                </value>
-            </inputParameters>
-            <inputParameters>
-                <name>showPreviousButton</name>
-                <value>
-                    <booleanValue>true</booleanValue>
-                </value>
-            </inputParameters>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
-            <isRequired>true</isRequired>
-            <outputParameters>
-                <assignToReference>customButtonClick</assignToReference>
-                <name>buttonClick</name>
-            </outputParameters>
-        </fields>
-        <showFooter>true</showFooter>
-        <showHeader>true</showHeader>
-    </screens>
-    <screens>
         <name>test_screen1</name>
         <label>Records Created Successfully</label>
         <locationX>50</locationX>
-        <locationY>930</locationY>
+        <locationY>753</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -1593,7 +1442,7 @@
         <name>test_screen1_0</name>
         <label>Records Created Successfully</label>
         <locationX>639</locationX>
-        <locationY>1128</locationY>
+        <locationY>951</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -1609,7 +1458,7 @@
         <name>test_screen1_0_0</name>
         <label>Records Created Successfully</label>
         <locationX>252</locationX>
-        <locationY>1080</locationY>
+        <locationY>903</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -1625,7 +1474,7 @@
         <name>Test_Step_Execution_Screen</name>
         <label>Test Step Execution</label>
         <locationX>1542</locationX>
-        <locationY>371</locationY>
+        <locationY>194</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -1819,7 +1668,6 @@
                     <elementReference>uploadedFileName_Collection</elementReference>
                 </value>
             </inputParameters>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
             <outputParameters>
                 <assignToReference>ContentDocId_Collection</assignToReference>
@@ -1914,21 +1762,20 @@
                     <booleanValue>false</booleanValue>
                 </value>
             </inputParameters>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
             <outputParameters>
                 <assignToReference>customButtonClick</assignToReference>
                 <name>buttonClick</name>
             </outputParameters>
         </fields>
-        <showFooter>true</showFooter>
+        <showFooter>false</showFooter>
         <showHeader>true</showHeader>
     </screens>
     <screens>
         <name>Test_Step_Records_Not_Found</name>
         <label>Test Step Records Not Found</label>
-        <locationX>1648</locationX>
-        <locationY>149</locationY>
+        <locationX>1503</locationX>
+        <locationY>15</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -1942,9 +1789,9 @@
     </screens>
     <start>
         <locationX>867</locationX>
-        <locationY>227</locationY>
+        <locationY>50</locationY>
         <connector>
-            <targetReference>Populate_Flow_variable</targetReference>
+            <targetReference>Get_Test_Case_Record</targetReference>
         </connector>
     </start>
     <status>Active</status>
@@ -2091,14 +1938,6 @@
         <objectType>Test_Step_Execution__c</objectType>
     </variables>
     <variables>
-        <name>TotalNumberOfTS</name>
-        <dataType>Number</dataType>
-        <isCollection>false</isCollection>
-        <isInput>true</isInput>
-        <isOutput>true</isOutput>
-        <scale>2</scale>
-    </variables>
-    <variables>
         <name>TotalNumberOfTSE</name>
         <dataType>Number</dataType>
         <isCollection>false</isCollection>
@@ -2115,22 +1954,6 @@
     </variables>
     <variables>
         <name>TSE_with_TCE_Id</name>
-        <dataType>SObject</dataType>
-        <isCollection>true</isCollection>
-        <isInput>true</isInput>
-        <isOutput>true</isOutput>
-        <objectType>Test_Step_Execution__c</objectType>
-    </variables>
-    <variables>
-        <name>TSERecordCollection</name>
-        <dataType>SObject</dataType>
-        <isCollection>true</isCollection>
-        <isInput>true</isInput>
-        <isOutput>true</isOutput>
-        <objectType>Test_Step_Execution__c</objectType>
-    </variables>
-    <variables>
-        <name>TSRecordCollection</name>
         <dataType>SObject</dataType>
         <isCollection>true</isCollection>
         <isInput>true</isInput>
