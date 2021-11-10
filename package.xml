@@ -7,10 +7,6 @@
         <name>ApexClass</name>
     </types>
     <types>
-        <members>CustomFlowFooter</members>
-        <name>AuraDefinitionBundle</name>
-    </types>
-    <types>
         <members>Test_Case_Execution__c.Test_Case_ExecutionLayout</members>
         <name>CompactLayout</name>
     </types>
