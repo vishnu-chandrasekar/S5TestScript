@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Starts the cycle for Test Case Execution</description>
+    <flowDefinition>Create_Test_Case_Execution_Test_Step_Execution</flowDefinition>
+    <label>Begin Cycle</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

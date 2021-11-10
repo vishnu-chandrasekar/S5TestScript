@@ -1,0 +1,22 @@
+<design:component >
+    <design:attribute name="cancelButtonLabel" label="Cancel Button Label" default="Next"/>
+    <design:attribute name="nextButtonLabel" label="Next Button Label" default="Next"/>
+
+    <design:attribute name="cancelButtonClass" label="Cancel Button Class" default="slds-button_brand"/>
+    <design:attribute name="nextButtonClass" label="Next Button Class" default="slds-button_brand"/>
+    
+    <design:attribute name="showCancelButton" label="Show Cancel Button?" default="true"/>
+    <design:attribute name="showNextButton" label="Show Next Button?" default="false"/>
+
+    <design:attribute name="disableCancelButton" label="Disable Cancel Button?" default="false"/>
+    <design:attribute name="disableNextButton" label="Disable Next Button?" default="false"/>
+    
+    <design:attribute name="previousButtonLabel" label="Previous Button Label" default="Previous"/>
+    <design:attribute name="previousButtonClass" label="Previous Button Class" default="slds-button_neutral"/>
+    <design:attribute name="showPreviousButton" label="Show Previous Button?" default="false"/>
+    
+    <design:attribute name="buttonLocation" label="Button Location? (left, middle, right)" default="right"/>
+    <design:attribute name="buttonClick" label="Button Click (for output use only)" />
+    <design:attribute name="onFinalPage" label="On Final Page?" default="false"/>
+
+</design:component>

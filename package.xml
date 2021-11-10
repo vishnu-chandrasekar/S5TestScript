@@ -7,6 +7,14 @@
         <name>ApexClass</name>
     </types>
     <types>
+        <members>CustomFlowFooter</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>Test_Case_Execution__c.Test_Case_ExecutionLayout</members>
+        <name>CompactLayout</name>
+    </types>
+    <types>
         <members>Project_Defect__c.Test_Case_Execution_Id__c</members>
         <members>Project_Defect__c.Test_Step_Execution_Id__c</members>
         <members>Project_Defect__c.Test_Step__c</members>
@@ -46,8 +54,20 @@
         <name>Layout</name>
     </types>
     <types>
+        <members>Test_Case_Execution__c.All</members>
+        <members>Test_Case__c.All</members>
+        <members>Test_Scenario__c.All</members>
+        <members>Test_Step_Execution__c.All</members>
+        <members>Test_Step__c.All</members>
+        <name>ListView</name>
+    </types>
+    <types>
         <members>SpringProject_User</members>
         <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>Test_Case__c.Begin_Cycle</members>
+        <name>QuickAction</name>
     </types>
     <types>
         <members>unfiled$public/Test_Step_Execution_89M</members>
