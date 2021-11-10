@@ -144,11 +144,6 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentName>interviewsByRecord</componentName>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
                 <componentInstanceProperties>
                     <name>tabs</name>
                     <value>Facet-112b5262-de31-47b5-8b4d-a92351b9da9b</value>

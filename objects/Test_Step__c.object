@@ -199,6 +199,7 @@
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
+    <gender>Feminine</gender>
     <label>Test Step</label>
     <listViews>
         <fullName>All</fullName>

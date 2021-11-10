@@ -454,6 +454,7 @@
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
+    <gender>Feminine</gender>
     <label>Test Case</label>
     <listViews>
         <fullName>All</fullName>

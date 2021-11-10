@@ -192,6 +192,7 @@
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
     </fields>
+    <gender>Feminine</gender>
     <label>Test Scenario</label>
     <listViews>
         <fullName>All</fullName>
