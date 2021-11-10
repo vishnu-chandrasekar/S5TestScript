@@ -7,6 +7,12 @@
         <name>ApexClass</name>
     </types>
     <types>
+        <members>Project_Defect__c.Test_Case_Execution_Id__c</members>
+        <members>Project_Defect__c.Test_Step_Execution_Id__c</members>
+        <members>Project_Defect__c.Test_Step__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
         <members>Test_Case_Execution__c</members>
         <members>Test_Case__c</members>
         <members>Test_Scenario__c</members>
