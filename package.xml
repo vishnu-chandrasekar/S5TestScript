@@ -62,10 +62,6 @@
         <name>ListView</name>
     </types>
     <types>
-        <members>SpringProject_User</members>
-        <name>PermissionSet</name>
-    </types>
-    <types>
         <members>Test_Case__c.Begin_Cycle</members>
         <name>QuickAction</name>
     </types>
