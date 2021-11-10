@@ -15,8 +15,29 @@
         <name>CustomObject</name>
     </types>
     <types>
+        <members>Test_Case_Execution__c</members>
+        <members>Test_Case__c</members>
+        <members>Test_Scenario__c</members>
+        <members>Test_Step_Execution__c</members>
+        <members>Test_Step__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Test_Case_Execution_Record_Page</members>
+        <members>Test_Case_Record_Page</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
         <members>Create_Test_Case_Execution_Test_Step_Execution</members>
         <name>Flow</name>
+    </types>
+    <types>
+        <members>Test_Case_Execution__c-Test Case Execution Layout</members>
+        <members>Test_Case__c-Test Case Layout</members>
+        <members>Test_Scenario__c-Test Scenario Layout</members>
+        <members>Test_Step_Execution__c-Test Step Execution Layout</members>
+        <members>Test_Step__c-Test Step Layout</members>
+        <name>Layout</name>
     </types>
     <types>
         <members>SpringProject_User</members>
